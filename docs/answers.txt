@@ -1,0 +1,76 @@
+Name: Lizbeth Vazquez
+FSUID: lv24g
+
+Git Lab Tutorials Completed: October 11, 2026
+GitHub Account Created: Approximately September 2024
+
+
+1. Paste the console output saved at the end of step 3.C.
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 415 bytes | 415.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/liz0612/assignment2.git
+   31547c2..1901102  master -> master
+
+
+2. How many commits have been done to the repository so far? Write the git command used to get this information.
+
+There have been 9 commits made to the repository so far.
+
+Command used:
+git rev-list --count HEAD
+
+
+3. When was the README.md file modified last? Write the git command used to get this information.
+
+The README.md file was last modified on Saturday, October 17, 2026 at 3:58:57 PM.
+
+Command used:
+git log -1 --format="%ad" --date=local -- README.md
+
+
+4. Mention two reasons why branches are used in a Git repository.
+
+Branches allow developers to work on new features or changes without affecting the main branch. They also allow multiple developers to work on different parts of a project at the same time and merge their changes later.
+
+
+5. What is the difference between git log and git status?
+
+git log shows the history of commits that have been made to the repository. git status shows the current state of the working tree, including files that have been modified, staged, or are untracked.
+
+
+6. What command would you use to see the commits where "Vehicle.h" was one of the committed files?
+
+git log -- Vehicle.h
+
+
+7. What command would you use to see the commits whose commit message contains the word "file"?
+
+git log --grep="file" -i
+
+
+8. In the context of object-oriented programming:
+(I) What is inheritance?
+(II) What is polymorphism?
+(III) What is encapsulation?
+
+I. Inheritance is when a class gets attributes and methods from another class. It allows code to be reused and allows classes to be related to each other.
+
+II. Polymorphism allows the same method or interface to have different behaviors depending on the object that is using it.
+
+III. Encapsulation is the process of keeping an object's data and methods together inside a class while controlling access to its internal data.
+
+
+9. What is the main difference between the "Dictator and Lieutenants" workflow and the "Integration Manager" workflow?
+
+The main difference is how the integration work is organized. In the Integration Manager workflow, developers push to their own public repositories and an integration manager is responsible for integrating the changes and resolving conflicts. In the Dictator and Lieutenants workflow, developers send their changes to assigned lieutenants. The lieutenants merge changes and resolve conflicts for their groups, and the dictator then merges the changes from the lieutenants into the blessed repository.
+
+
+10. How would a team of 100 developers benefit from following the "Dictator and Lieutenants" workflow instead of the "Centralized" workflow?
+
+A team of 100 developers would benefit from the Dictator and Lieutenants workflow because the developers can be divided into smaller groups that are managed by lieutenants. The lieutenants can merge changes and resolve conflicts for their assigned developers before sending the changes to the dictator. This distributes the integration work instead of having all 100 developers working directly with one shared repository. It makes a large development team easier to organize and manage.
